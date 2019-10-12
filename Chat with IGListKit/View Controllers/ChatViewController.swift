@@ -37,7 +37,7 @@ class ChatViewController: UIViewController {
         self.chatCollectionView.register(ChatCell.self, forCellWithReuseIdentifier: ChatCell.reuseID)
         
     }
-    
+    // MARK: - IBAction sendButton
     @IBAction func sendButtonTapped(_ sender: UIButton?) {
         guard let chatText = chatTextField.text , chatText.count >= 1 else { return }
         chatTextField.text = ""
@@ -51,7 +51,7 @@ class ChatViewController: UIViewController {
         let indexPath = IndexPath(item: lastItem, section: 0)
         self.chatCollectionView.scrollToItem(at: indexPath, at: .bottom, animated: true)
     }
-    
+    // MARK: - Change height of textfield and sendButton
     private func manageInputEventsForTheSubViews() {
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardFrameChangeNotfHandler(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -173,7 +173,7 @@ extension ChatViewController: UICollectionViewDelegateFlowLayout {
 }
 
 
-
+// MARK - UITextFieldDelegate
 extension ChatViewController: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

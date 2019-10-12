@@ -84,9 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				74FD157A23524A5000C69BC7 /* Models */,
-				74FD15722352437000C69BC7 /* Supporting Files */,
 				74FD1575235243D600C69BC7 /* View Controllers */,
 				74FD15732352439000C69BC7 /* Storyboards */,
+				74FD15722352437000C69BC7 /* Supporting Files */,
 				74FD1574235243C600C69BC7 /* Resources */,
 			);
 			path = "Chat with IGListKit";
