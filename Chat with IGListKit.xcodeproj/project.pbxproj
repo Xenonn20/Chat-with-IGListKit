@@ -20,6 +20,8 @@
 		74FD158023524CAA00C69BC7 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FD157F23524CAA00C69BC7 /* Chat.swift */; };
 		74FD1583235254DC00C69BC7 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FD1582235254DC00C69BC7 /* ChatCell.swift */; };
 		74FD1585235260D500C69BC7 /* UIView+ Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FD1584235260D500C69BC7 /* UIView+ Ext.swift */; };
+		74FD15872352784800C69BC7 /* NSObject + ListDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FD15862352784800C69BC7 /* NSObject + ListDiffable.swift */; };
+		74FD158923527A8E00C69BC7 /* ChatSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FD158823527A8E00C69BC7 /* ChatSectionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		74FD157F23524CAA00C69BC7 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		74FD1582235254DC00C69BC7 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		74FD1584235260D500C69BC7 /* UIView+ Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ Ext.swift"; sourceTree = "<group>"; };
+		74FD15862352784800C69BC7 /* NSObject + ListDiffable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + ListDiffable.swift"; sourceTree = "<group>"; };
+		74FD158823527A8E00C69BC7 /* ChatSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSectionController.swift; sourceTree = "<group>"; };
 		DD6D48CDCA3FC2A1E7BA6AE9 /* Pods-Chat with IGListKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat with IGListKit.release.xcconfig"; path = "Target Support Files/Pods-Chat with IGListKit/Pods-Chat with IGListKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +64,15 @@
 				1C56132678D8DF4BD10D5BD3 /* Pods_Chat_with_IGListKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7411F0A42353237100ECD7BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74FD1584235260D500C69BC7 /* UIView+ Ext.swift */,
+				74FD15862352784800C69BC7 /* NSObject + ListDiffable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		74FD1542234F9E7000C69BC7 = {
@@ -84,8 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				74FD157A23524A5000C69BC7 /* Models */,
+				74FD158A23527A9500C69BC7 /* SectionControllers */,
 				74FD1575235243D600C69BC7 /* View Controllers */,
 				74FD15732352439000C69BC7 /* Storyboards */,
+				7411F0A42353237100ECD7BC /* Extensions */,
 				74FD15722352437000C69BC7 /* Supporting Files */,
 				74FD1574235243C600C69BC7 /* Resources */,
 			);
@@ -116,7 +131,6 @@
 			children = (
 				74FD1557234F9E7300C69BC7 /* Assets.xcassets */,
 				74FD157F23524CAA00C69BC7 /* Chat.swift */,
-				74FD1584235260D500C69BC7 /* UIView+ Ext.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -146,6 +160,14 @@
 				74FD1582235254DC00C69BC7 /* ChatCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		74FD158A23527A9500C69BC7 /* SectionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74FD158823527A8E00C69BC7 /* ChatSectionController.swift */,
+			);
+			path = SectionControllers;
 			sourceTree = "<group>";
 		};
 		9877E620AC445828B991F5F8 /* Pods */ = {
@@ -276,11 +298,13 @@
 				74FD1583235254DC00C69BC7 /* ChatCell.swift in Sources */,
 				74FD157C23524A7B00C69BC7 /* User.swift in Sources */,
 				74FD154F234F9E7000C69BC7 /* AppDelegate.swift in Sources */,
+				74FD15872352784800C69BC7 /* NSObject + ListDiffable.swift in Sources */,
 				74FD1579235244AE00C69BC7 /* ChatViewController.swift in Sources */,
 				74FD158023524CAA00C69BC7 /* Chat.swift in Sources */,
 				74FD1551234F9E7000C69BC7 /* SceneDelegate.swift in Sources */,
 				74FD157E23524BBC00C69BC7 /* Message.swift in Sources */,
 				74FD1585235260D500C69BC7 /* UIView+ Ext.swift in Sources */,
+				74FD158923527A8E00C69BC7 /* ChatSectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

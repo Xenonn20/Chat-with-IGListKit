@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import IGListKit
 
-class Message {
+class Message: NSObject {
     
     let user: User
     let sendByMe: Bool

@@ -12,14 +12,15 @@ class Chat {
     
     var chat: [Message] = []
     
-    func loadChat() -> [Message] {
-        let userOne = User(name: "Алексей", image: #imageLiteral(resourceName: "alexey"))
+    func loadChat() {
+        let userOne = User(name: "Alex", image: #imageLiteral(resourceName: "alexey"))
+        let userTwo = User(name: "Max", image: #imageLiteral(resourceName: "kirill"))
         
         let chat = [
-            Message(user: userOne,sendByMe: false, messgae: "Привет, Кирилл! Это Алексей из компании Геометр."),
-            Message(user: userOne,sendByMe: false, messgae: "Я слышал, ты ищешь работу. Нам как раз нужны такие ребята.")
+            Message(user: userOne,sendByMe: false, messgae: "Hi, Max! How are you?"),
+            Message(user: userOne,sendByMe: false, messgae: "I heard you are looking for work. We need guys like you."), Message(user: userOne,sendByMe: false, messgae: "Need to make a cool application."), Message(user: userTwo,sendByMe: true, messgae: "Hi, Alex!"), Message(user: userTwo,sendByMe: true, messgae: "Ready to complete this task.")
         ]
         self.chat = chat
-        return chat
+    
     }
 }

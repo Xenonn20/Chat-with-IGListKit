@@ -8,7 +8,7 @@
 
 import UIKit
 
-class User {
+class User: NSObject {
     
     let name: String!
     let image: UIImage!

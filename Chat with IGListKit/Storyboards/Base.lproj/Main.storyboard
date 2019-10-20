@@ -35,7 +35,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gdw-aQ-mas">
                                                 <rect key="frame" x="8" y="2" width="398" height="46"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Message" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="0W8-iO-ZGm">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Сообщение..." textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="0W8-iO-ZGm">
                                                         <rect key="frame" x="0.0" y="0.0" width="320.33333333333331" height="46"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="send"/>
@@ -87,7 +87,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fHj-Jv-67a"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ChatViewController" id="hJ8-DF-sGr"/>
+                    <navigationItem key="navigationItem" title="Title" id="DkH-p4-qSC"/>
                     <connections>
                         <outlet property="bottomConstraint" destination="OBG-9U-5Kn" id="peb-Bs-I9d"/>
                         <outlet property="chatCollectionView" destination="LnK-I1-HVF" id="hH9-M2-98I"/>
