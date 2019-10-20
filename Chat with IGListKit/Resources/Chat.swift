@@ -13,7 +13,7 @@ class Chat {
     var chat: [Message] = []
     
     func loadChat() {
-        let userOne = User(name: "Alex", image: #imageLiteral(resourceName: "alexey"))
+        let userOne = User(name: "Alex", image: #imageLiteral(resourceName: "man"))
         let userTwo = User(name: "Max", image: #imageLiteral(resourceName: "kirill"))
         
         let chat = [

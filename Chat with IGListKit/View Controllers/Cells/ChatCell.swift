@@ -36,7 +36,7 @@ class ChatCell: BaseCells {
            let imageView = UIImageView()
            imageView.contentMode = .scaleAspectFill
            imageView.layer.cornerRadius = 15
-           imageView.image = #imageLiteral(resourceName: "alexey")
+           imageView.image = #imageLiteral(resourceName: "man")
            imageView.layer.masksToBounds = true
            return imageView
        }()
